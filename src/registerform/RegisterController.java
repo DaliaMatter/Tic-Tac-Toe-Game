@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 
@@ -65,11 +66,13 @@ public class RegisterController implements Initializable {
         }
     }
 
-//    @FXML
-//    private void checkPassword(InputMethodEvent event) {
-//        if(tf_password_1 != tf_password_2){
-//            tf_password_2.promptTextProperty().setValue("They aren't the same !!");
-//        }
-//    }
-
+    @FXML
+    private void checkPassword(ActionEvent  event) {
+//        System.out.println(tf_password_1.getText().toString());
+//        System.out.println(tf_password_2.getText().toString());
+        if (!tf_password_1.getText().toString().equals(tf_password_2.getText().toString()) ) {
+            tf_password_2.promptTextProperty().setValue("They aren't the same !!");
+        }
+       
+    }
 }

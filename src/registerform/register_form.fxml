@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registerform.RegisterController">
+<AnchorPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registerform.RegisterController">
    <children>
       <Label alignment="CENTER" layoutY="37.0" prefHeight="90.0" prefWidth="600.0" text="Register" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
          <font>
@@ -27,12 +27,12 @@
          <font>
             <Font size="14.0" />
          </font></JFXPasswordField>
-      <JFXButton fx:id="btn_register" alignment="CENTER" buttonType="RAISED" layoutX="181.0" layoutY="486.0" prefHeight="58.0" prefWidth="138.0" ripplerFill="#030303" style="-fx-background-color: green;" text="Register Now" textFill="WHITE" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="181.0">
+      <JFXButton fx:id="btn_register" alignment="CENTER" buttonType="RAISED" layoutX="160.0" layoutY="486.0" onAction="#checkPassword" prefHeight="58.0" prefWidth="130.0" ripplerFill="#030303" style="-fx-background-color: green;" text="Register Now" textFill="WHITE" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0">
          <font>
             <Font name="Aldhabi" size="24.0" />
          </font>
       </JFXButton>
-      <Label layoutX="57.0" layoutY="410.0" prefHeight="29.0" prefWidth="61.0" text="Gender" AnchorPane.leftAnchor="57.0">
+      <Label layoutX="57.0" layoutY="410.0" prefHeight="29.0" prefWidth="61.0" text="Gender" AnchorPane.leftAnchor="50.0">
          <font>
             <Font name="Andalus" size="18.0" />
          </font>
