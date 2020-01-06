@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="500.0" maxWidth="400.0" prefHeight="500.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="loginform.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="52.0" text="Login" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Andalus" size="48.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="tf_username" labelFloat="true" layoutX="100.0" layoutY="167.0" maxWidth="200.0" minWidth="200.0" onMouseClicked="#resetNameField" prefHeight="40.0" prefWidth="200.0" promptText="User Name" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btn_login" buttonType="RAISED" layoutX="166.0" layoutY="303.0" onAction="#handleLoginButton" style="-fx-background-color: green;" text="Login" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="166.0">
+         <font>
+            <Font name="Aldhabi" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="tf_password" labelFloat="true" layoutX="102.0" layoutY="250.0" maxWidth="200.0" minWidth="200.0" onMouseClicked="#validateName" prefHeight="40.0" prefWidth="200.0" promptText="Password" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <Label layoutX="172.0" layoutY="416.0" />
+      <Label layoutX="107.0" layoutY="403.0" text="Don't have an account?" textFill="#908080" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="107.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="registerLink" layoutX="150.0" layoutY="433.0" prefHeight="28.0" prefWidth="100.0" text="Register Here" textFill="BLUE" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
