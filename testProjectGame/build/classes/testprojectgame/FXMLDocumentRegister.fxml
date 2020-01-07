@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700.0" maxWidth="600.0" minHeight="700.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../css/register.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testprojectgame.FXMLDocumentControllerRegister">
+   <children>
+      <TextField fx:id="tf_username" layoutX="100.0" layoutY="239.0" onMouseClicked="#resetNameField" prefHeight="40.0" prefWidth="350.0" promptText="User Name" styleClass="textColor" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="tf_password_1" layoutX="100.0" layoutY="298.0" onMouseClicked="#validateName" prefHeight="40.0" prefWidth="350.0" promptText="Password" styleClass="textColor" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="tf_password_2" layoutX="100.0" layoutY="370.0" onMouseClicked="#validatePasswordAndName" prefHeight="40.0" prefWidth="350.0" promptText="Confirm Password" styleClass="textColor" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="btn_register" alignment="CENTER" layoutX="209.0" layoutY="499.0" onAction="#checkPassword" prefHeight="63.0" prefWidth="183.0" styleClass="buttonLogin" text="Register Now" textFill="WHITE" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="208.0">
+         <font>
+            <Font name="Andalus" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="110.0" layoutY="438.0" prefHeight="29.0" prefWidth="61.0" text="Gender" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Andalus" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="392.0" layoutY="444.0" prefHeight="17.0" prefWidth="81.0" text="Male" fx:id="male" onAction="#radioButtonMaleHandler" />
+      <RadioButton layoutX="243.0" layoutY="444.0" prefHeight="17.0" prefWidth="88.0" text="Female" fx:id="female" onAction="#radioButtonFemaleHandler" />
+      <Label alignment="CENTER" layoutX="206.0" layoutY="123.0" text="Register" textFill="#787d7d">
+         <font>
+            <Font name="Andalus" size="50.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="490.0" maxWidth="40.0" minWidth="40.0" onAction="#closeAction" prefHeight="26.0" prefWidth="40.0" styleClass="icon" text=" X " textFill="#3366cc">
+         <font>
+            <Font name="Aparajita Bold" size="23.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="445.0" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" styleClass="icon" text=" | " textAlignment="CENTER" textFill="#3366cc">
+         <font>
+            <Font name="Aparajita Bold" size="33.0" />
+         </font>
+      </Hyperlink>
+      
+      <Hyperlink layoutX="397.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon" text=" -" textAlignment="CENTER" textFill="#3366cc">
+         <font>
+            <Font name="Aparajita Bold" size="27.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="49.0" fitWidth="98.0" layoutX="379.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

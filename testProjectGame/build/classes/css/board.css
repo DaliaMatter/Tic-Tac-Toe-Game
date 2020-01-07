@@ -1,0 +1,27 @@
+
+.main {     
+    -fx-background-image: url('../image/yy.jpg');
+}
+.icon
+{
+  -fx-background-color:#ffffff;   
+}
+
+.buttonGridO
+{
+    -fx-background-image: url('../image/favicon-png-2.png');
+    -fx-background-color: transparent;
+    -fx-background-size: 100% ;
+}
+
+.buttonGridX
+{
+    -fx-background-image: url('../image/black-x-png-32.png');
+    -fx-background-color: transparent;
+    -fx-background-size: 100% ;
+}
+.close
+{
+  background-image: none !important;
+  -fx-background-color:#545132;
+}

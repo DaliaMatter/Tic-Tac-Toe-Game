@@ -1,0 +1,19 @@
+
+.mainFxmlClass {
+    -fx-background-image: url('../image/yy.jpg');
+}
+.icon
+{
+  -fx-background-color:#ffffff;   
+}
+
+.pic
+{
+        -fx-background-size: 100% ;
+
+}
+.close
+{
+  background-image: none !important;
+    -fx-background-color:#545132;
+}

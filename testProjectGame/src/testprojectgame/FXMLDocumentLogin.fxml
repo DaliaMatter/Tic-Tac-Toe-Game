@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="600.0" minHeight="700.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testprojectgame.FXMLDocumentControllerLogin">
+   <children>
+      <Label alignment="CENTER" layoutX="-14.0" layoutY="126.0" text="Login" textFill="#787d7d" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="126.0">
+         <font>
+            <Font name="Andalus" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_username" layoutX="106.0" layoutY="246.0" maxWidth="200.0" minWidth="200.0" onMouseClicked="#resetNameField" prefHeight="40.0" prefWidth="200.0" promptText="User Name" styleClass="textColor" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="94.0">
+         <font>
+            <Font name="Andalus" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_login" layoutX="247.0" layoutY="418.0" onAction="#handleLoginButton" prefHeight="57.0" prefWidth="146.0" styleClass="buttonLogin" text="Go" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="207.0">
+         <font>
+            <Font name="Andalus" size="24.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="tf_password" layoutX="106.0" layoutY="330.0" maxWidth="200.0" minWidth="200.0" onMouseClicked="#validateName" prefHeight="40.0" prefWidth="200.0" promptText="Password" styleClass="textColor" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="94.0">
+         <font>
+            <Font name="Andalus" size="14.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="172.0" layoutY="416.0" />
+      <Label layoutX="107.0" layoutY="377.0" text="Don't have an account?" textFill="#908080" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="107.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="registerLink" layoutX="121.0" layoutY="402.0" onAction="#handleRegisterLink" prefHeight="28.0" prefWidth="100.0" text="Register Here" textFill="#0000ffa6" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="179.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="49.0" fitWidth="98.0" layoutX="350.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="263.0" layoutX="106.0" layoutY="565.0" pickOnBounds="true" preserveRatio="true" styleClass="pic">
+         <image>
+            <Image url="@../image/22.jpg" />
+         </image>
+      </ImageView>
+       <Hyperlink layoutX="490.0" maxWidth="40.0" minWidth="40.0" onAction="#closeAction" prefHeight="26.0" prefWidth="40.0" styleClass="icon" text=" X " textFill="#3366cc">
+         <font>
+            <Font name="Aparajita Bold" size="23.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="445.0" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" styleClass="icon" text=" | " textAlignment="CENTER" textFill="#3366cc">
+         <font>
+            <Font name="Aparajita Bold" size="33.0" />
+         </font>
+      </Hyperlink>
+      
+      <Hyperlink layoutX="397.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon" text=" -" textAlignment="CENTER" textFill="#3366cc">
+         <font>
+            <Font name="Aparajita Bold" size="27.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
