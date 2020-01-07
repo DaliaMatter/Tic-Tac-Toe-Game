@@ -27,9 +27,8 @@ public class LoginForm extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("login_form.fxml"));
         
         Scene scene = new Scene(root);
-        
-//        primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

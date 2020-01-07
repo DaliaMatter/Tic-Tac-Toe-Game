@@ -71,7 +71,7 @@ public class RegisterController implements Initializable {
 //        System.out.println(tf_password_1.getText().toString());
 //        System.out.println(tf_password_2.getText().toString());
         if (!tf_password_1.getText().toString().equals(tf_password_2.getText().toString()) ) {
-            tf_password_2.promptTextProperty().setValue("They aren't the same !!");
+            tf_password_2.promptTextProperty().setValue("The two passwords are not the same !!");
         }
        
     }
