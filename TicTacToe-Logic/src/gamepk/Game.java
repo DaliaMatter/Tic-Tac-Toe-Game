@@ -16,10 +16,10 @@ public class Game {
 
 	/*
 	 * This Method Check which Player WIN by Looping on the board and check on 3
-	 * cases of winning 1) Same Player use 3 Horizontal Cells in 3 Rows. 2) Same
-	 * Player use 3 Vertical Cells in 3 Rows. 3) Same Player use 3 Diagonal Cells in
-	 * Each(2) Diagonal. and check if NO ONE of them win and the board full that
-	 * will be DRAW case
+	 * cases of winning (1) Same Player use 3 Horizontal Cells in 3 Rows. (2) Same
+	 * Player use 3 Vertical Cells in 3 Columns. (3) Same Player use 3 Diagonal
+	 * Cells in Each"2" Diagonal. And check if NO ONE of them win and the board full
+	 * that will be DRAW case
 	 */
 
 	public void checkWinner() {

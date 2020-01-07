@@ -8,11 +8,13 @@ package testpk;
 import java.util.Scanner;
 
 import gamepk.Game;
+import single_playerpk.SinglePlayer;
 
 public class Test {
 
 	static Game game = new Game();
 	static String[] board;
+	static SinglePlayer AI = new SinglePlayer();
 
 	static void printBoard() {
 		System.out.println("/---|---|---\\");
@@ -44,7 +46,7 @@ public class Test {
 				turn = 'O';
 				printBoard();
 			} else {
-				pos = input.nextInt();
+				pos = AI.hardLevel(game);
 				game.board.emptyBoard[pos].setSymbol(turn);
 				board[pos] = "O";
 				turn = 'X';
