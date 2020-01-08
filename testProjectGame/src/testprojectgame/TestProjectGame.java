@@ -25,7 +25,7 @@ public class TestProjectGame extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLDocumentLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLDocumentChoice.fxml"));
         Parent root = (Parent) fxmlLoader.load();
        root.setOnMousePressed((MouseEvent event) -> {
             xOffset = event.getSceneX();
@@ -37,7 +37,7 @@ public class TestProjectGame extends Application {
         });
       
         Scene scene = new Scene(root);
-      //  ((FXMLDocumentControllerLogin) fxmlLoader.getController()).setStage(stage, scene);
+        ((FXMLDocumentControllerChoice) fxmlLoader.getController()).setStage(stage, scene);
 
      
         

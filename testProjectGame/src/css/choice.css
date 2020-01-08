@@ -12,8 +12,31 @@
         -fx-background-size: 100% ;
 
 }
+.playersList
+{
+    -fx-border-color:white;
+    -fx-background-color:#E594AA;
+
+}
+.playersList Text
+{
+    
+    -fx-fill: white;
+
+}
+.playersList Line {
+  -fx-stroke   : white;
+}
+.buttonplay
+{
+    //-fx-background-color:linear-gradient(#DE788E,#90C3B8);
+    -fx-background-color:#3265CC;
+    -fx-border-color: #3265CC;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius:30px;
+}
 .close
 {
-  background-image: none !important;
     -fx-background-color:#545132;
 }
