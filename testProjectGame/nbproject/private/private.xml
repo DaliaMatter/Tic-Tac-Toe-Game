@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/dell2/Documents/NetBeansProjects/ProjectTiecTacToc/testProjectGame/src/testprojectgame/FXMLDocumentBoard.fxml</file>
-            <file>file:/C:/Users/dell2/Documents/NetBeansProjects/ProjectTiecTacToc/testProjectGame/src/testprojectgame/FXMLDocumentControllerChoice.java</file>
-            <file>file:/C:/Users/dell2/Documents/NetBeansProjects/ProjectTiecTacToc/testProjectGame/src/testprojectgame/FXMLDocumentChoice.fxml</file>
-            <file>file:/C:/Users/dell2/Documents/NetBeansProjects/ProjectTiecTacToc/testProjectGame/src/testprojectgame/TestProjectGame.java</file>
+            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGame/src/testprojectgame/FXMLDocumentRegister.fxml</file>
+            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGame/src/testprojectgame/FXMLDocumentChoice.fxml</file>
+            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGame/src/testprojectgame/FXMLDocumentBoard.fxml</file>
+            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGame/src/testprojectgame/FXMLDocumentLogin.fxml</file>
         </group>
     </open-files>
 </project-private>

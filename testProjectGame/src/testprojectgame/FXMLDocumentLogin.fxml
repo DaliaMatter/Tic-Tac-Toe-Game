@@ -53,20 +53,19 @@
             <Image url="@../image/22.jpg" />
          </image>
       </ImageView>
-       <Hyperlink layoutX="490.0" maxWidth="40.0" minWidth="40.0" onAction="#closeAction" prefHeight="26.0" prefWidth="40.0" styleClass="icon" text=" X " textFill="#3366cc">
+       <Hyperlink layoutX="490.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text=" X " textFill="#3366cc">
          <font>
-            <Font name="Aparajita Bold" size="23.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="445.0" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" styleClass="icon" text=" | " textAlignment="CENTER" textFill="#3366cc">
+      <Hyperlink layoutX="445.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  |" textAlignment="CENTER" textFill="#3366cc">
          <font>
-            <Font name="Aparajita Bold" size="33.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
       </Hyperlink>
-      
-      <Hyperlink layoutX="397.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon" text=" -" textAlignment="CENTER" textFill="#3366cc">
+      <Hyperlink layoutX="399.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  -" textAlignment="CENTER" textFill="#3366cc">
          <font>
-            <Font name="Aparajita Bold" size="27.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
       </Hyperlink>
    </children>
