@@ -43,6 +43,7 @@ public class FXMLDocumentController implements Initializable {
     private int pos;
     private boolean AIFlag;
     private boolean AITurn;
+    private String choseenLevel;
 
     @FXML
     public Label label;
@@ -54,9 +55,8 @@ public class FXMLDocumentController implements Initializable {
     public Stage myStage;
     public Scene myScene;
 
-    public void setStage(Stage stage, Scene scene) {
-        myStage = stage;
-        myScene = scene;
+    public void setLevel(String lev) {
+        choseenLevel = lev;
     }
 
     @FXML
@@ -69,12 +69,12 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(0);
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
     }
 
     @FXML
-    public void clickPOS1(ActionEvent event
-    ) {
+    public void clickPOS1(ActionEvent event) {
         if (turn == 'X') {
             btn1.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
@@ -83,58 +83,61 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(1);
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
-
     }
 
     @FXML
-    public void clickPOS2(ActionEvent event
-    ) {
+    public void clickPOS2(ActionEvent event) {
         if (turn == 'X') {
             btn2.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
             btn2.setStyle("-fx-background-image:url('/image/favicon-png-2.png')");
         }
         selectPosition(2);
+
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
 
     }
 
     @FXML
-    public void clickPOS3(ActionEvent event
-    ) {
+    public void clickPOS3(ActionEvent event) {
         if (turn == 'X') {
             btn3.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
             btn3.setStyle("-fx-background-image:url('/image/favicon-png-2.png')");
         }
         selectPosition(3);
+
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
 
     }
 
     @FXML
-    public void clickPOS4(ActionEvent event
-    ) {
+    public void clickPOS4(ActionEvent event) {
         if (turn == 'X') {
             btn4.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
             btn4.setStyle("-fx-background-image:url('/image/favicon-png-2.png')");
         }
         selectPosition(4);
+
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
+
         }
 
     }
 
     @FXML
-    public void clickPOS5(ActionEvent event
-    ) {
+    public void clickPOS5(ActionEvent event) {
         if (turn == 'X') {
             btn5.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
@@ -143,13 +146,13 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(5);
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
 
     }
 
     @FXML
-    public void clickPOS6(ActionEvent event
-    ) {
+    public void clickPOS6(ActionEvent event) {
         if (turn == 'X') {
             btn6.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
@@ -158,13 +161,13 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(6);
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
 
     }
 
     @FXML
-    public void clickPOS7(ActionEvent event
-    ) {
+    public void clickPOS7(ActionEvent event) {
         if (turn == 'X') {
             btn7.setStyle("-fx-background-image:url('/image/black-x-png-32.png')");
         } else {
@@ -173,6 +176,7 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(7);
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
 
     }
@@ -188,13 +192,22 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(8);
         if (AIFlag == true && win != true) {
             pcPositions();
+            checkWin();
         }
 
     }
 
     private void selectPosition(int position) {
         game.board.emptyBoard[position].setSymbol(turn);
-        if (AITurn != true) {
+        if (AITurn != true && AIFlag != true) {
+            checkWin();
+            if (turn == 'X') {
+                turn = 'O';
+            } else {
+                turn = 'X';
+            }
+        } else if (AITurn != true && AIFlag == true) {
+            checkWin();
             if (turn == 'X') {
                 turn = 'O';
             } else {
@@ -204,19 +217,20 @@ public class FXMLDocumentController implements Initializable {
         } else {
             AITurn = false;
         }
-        game.checkWinner();
-        win = game.winFlag;
-        draw = game.drawFlag;
-        if (win) {
-            System.out.println("Winer");
-        } else if (draw) {
-            System.out.println("Draw");
-        }
 
     }
 
     private void pcPositions() {
-        pos = AI.hardLevel(game);
+        switch (choseenLevel) {
+            case "easy":
+                pos = AI.easyLevel(game);
+                break;
+            case "hard":
+                pos = AI.hardLevel(game);
+                break;
+            default:
+                break;
+        }
         selectPosition(pos);
         switch (pos) {
             case 0:
@@ -290,6 +304,20 @@ public class FXMLDocumentController implements Initializable {
         }
     }
 
+    public void checkWin() {
+        game.checkWinner();
+        win = game.winFlag;
+        draw = game.drawFlag;
+        if (win) {
+            System.out.println("Winer");
+
+            alert.display("Winer", turn + "is");
+
+        } else if (draw) {
+            System.out.println("Draw");
+        }
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         game = new Game();
@@ -297,7 +325,7 @@ public class FXMLDocumentController implements Initializable {
         win = false;
         draw = false;
         turn = 'X';
-        AIFlag = true;
+        AIFlag = false;
         AITurn = false;
 
         Label ll = new Label("name");

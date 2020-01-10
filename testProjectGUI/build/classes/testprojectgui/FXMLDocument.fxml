@@ -72,6 +72,11 @@
          </children>
       </AnchorPane>
       <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="you calling" textAlignment="CENTER" wrappingWidth="196.13671875" />
+      <Button  layoutX="51.0" layoutY="628.0"  prefHeight="64.0" prefWidth="64.0" styleClass="buttonPause" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
     
     </children>
 </AnchorPane>

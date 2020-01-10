@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="600.0" minHeight="700.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../css/choice.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller= "testprojectgui.FXMLDocumentControllerChoice">
+    <children>
+        <Text fill="#79dddf" layoutX="144.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play with ?">
+            <font>
+                <Font name="Andalus" size="78.0" />
+            </font>
+        </Text>
+      <Hyperlink layoutX="500.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text=" X " textFill="#3366cc">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="455.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  |" textAlignment="CENTER" textFill="#3366cc">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="409.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  -" textAlignment="CENTER" textFill="#3366cc">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Hyperlink>
+      <Text fill="#3265cc" layoutX="247.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer">
+         <font>
+            <Font name="Andalus" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="easy" onAction="#easyAI"  layoutX="158.0" layoutY="271.0" prefHeight="47.0" prefWidth="107.0" styleClass="buttonplay" text="Easy" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="hard" onAction="#hardAI"  layoutX="354.0" layoutY="271.0" prefHeight="47.0" prefWidth="107.0" styleClass="buttonplay" text="Hard" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="114.0" layoutY="440.0" maxHeight="200.0" maxWidth="411.0" minWidth="411.0" prefHeight="200.0" prefWidth="411.0">
+         <content>
+            <GridPane fx:id="myGrade" gridLinesVisible="true" prefHeight="32.0" prefWidth="409.0" styleClass="playersList">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name" textAlignment="CENTER" wrappingWidth="135.357421875">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Player Status" textAlignment="CENTER" wrappingWidth="134.357421875" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Invitation ?" textAlignment="CENTER" wrappingWidth="138.357421875" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Text fill="#e594aa" layoutX="273.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend">
+         <font>
+            <Font name="Andalus" size="26.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
