@@ -7,6 +7,8 @@ package testprojectgui;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -210,7 +212,7 @@ public class FXMLDocumentController implements Initializable {
     }
 
     private void pcPositions() {
-        pos = AI.easyLevel(game);
+        pos = AI.hardLevel(game);
         selectPosition(pos);
         switch (pos) {
             case 0:
