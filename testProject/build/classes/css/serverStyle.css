@@ -1,0 +1,32 @@
+.AnchorPane1
+{
+    -fx-background-color:#A39892;
+-fx-background-radius: 30;
+-fx-border-radius: 30;
+-fx-border-width:5;
+-fx-border-color: #A39892;    
+
+}
+
+.AnchorPane2
+{
+    -fx-background-color:#363331;
+    -fx-background-radius: 50px;
+
+    -fx-border-width: 5px;
+    -fx-border-color: #363331;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+
+
+}
+
+.Close{
+    -fx-border-color: #E9A909; 
+    -fx-border-style: none;
+    -fx-background-color: #E9A909;
+}
+.SeperatorCSS
+{
+    -fx-background-color:#A39892;
+
+}
