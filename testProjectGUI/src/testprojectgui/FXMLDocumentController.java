@@ -35,16 +35,16 @@ import javafx.stage.Stage;
  */
 public class FXMLDocumentController implements Initializable {
 
-    private static Game game;
-    private static String[] board;
-    private static SinglePlayer AI;
-    private boolean win;
-    private boolean draw;
-    private char turn;
-    private int pos;
-    private boolean AIFlag;
-    private boolean AITurn;
-    private String choseenLevel;
+    public static Game game;
+    public static String[] board;
+    public static SinglePlayer AI;
+    public boolean win;
+    public boolean draw;
+    public char turn;
+    public int pos;
+    public boolean AIFlag;
+    public boolean AITurn;
+    public String choseenLevel;
 
     @FXML
     public AnchorPane anchorPane;
@@ -192,7 +192,7 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
-    private void selectPosition(int position) {
+    public void selectPosition(int position) {
         game.board.emptyBoard[position].setSymbol(turn);
         if (AITurn != true && AIFlag != true) {
             checkWin();
@@ -217,7 +217,7 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
-    private void pcPositions() {
+    public void pcPositions() {
         switch (choseenLevel) {
             case "easy":
                 pos = AI.easyLevel(game);
@@ -349,12 +349,12 @@ public class FXMLDocumentController implements Initializable {
         chatList.add(new TextArea("name"), 0, 19);
     }
 
-     @FXML
-    private void closeAction(ActionEvent actionevent) {
+    @FXML
+    public void closeAction(ActionEvent actionevent) {
         System.exit(0);
     }
     @FXML 
-    private void minimizeAction(ActionEvent actionevent)
+    public void minimizeAction(ActionEvent actionevent)
     {
         Stage stage=(Stage)anchorPane.getScene().getWindow();
         stage.setIconified(true);

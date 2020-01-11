@@ -102,7 +102,7 @@ public class FXMLDocumentControllerChoice implements Initializable {
     }
 
     @FXML
-    private void easyAI(ActionEvent actionevent) {
+    public void easyAI(ActionEvent actionevent) {
         Parent root;
         Stage register_stage;
         FXMLLoader fxmlLoader;
@@ -124,7 +124,7 @@ public class FXMLDocumentControllerChoice implements Initializable {
     }
 
     @FXML
-    private void hardAI(ActionEvent actionevent) {
+    public void hardAI(ActionEvent actionevent) {
         Parent root;
         Stage register_stage;
         FXMLLoader fxmlLoader;
@@ -146,11 +146,11 @@ public class FXMLDocumentControllerChoice implements Initializable {
     }
 
     @FXML
-    private void closeAction(ActionEvent actionevent) {
+    public void closeAction(ActionEvent actionevent) {
         System.exit(0);
     }
     @FXML 
-    private void minimizeAction(ActionEvent actionevent)
+    public void minimizeAction(ActionEvent actionevent)
     {
         Stage stage=(Stage)anchorPane.getScene().getWindow();
         stage.setIconified(true);
