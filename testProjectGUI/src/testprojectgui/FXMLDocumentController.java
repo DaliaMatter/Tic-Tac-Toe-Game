@@ -27,6 +27,7 @@ import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -53,7 +54,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     public Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8;
     @FXML
-    public GridPane chatList;
+    public VBox ChatRoom;
 
     public Stage myStage;
     public Scene myScene;
@@ -327,26 +328,25 @@ public class FXMLDocumentController implements Initializable {
         AITurn = false;
 
         Label ll = new Label("name");
-        chatList.add(new TextArea(""), 0, 0);
-        chatList.add(new TextArea("name"), 0, 1);
-        chatList.add(new TextArea("name"), 0, 2);
-        chatList.add(new TextArea("name"), 0, 3);
-        chatList.add(new TextArea("namnnfzfghjkljhgfdsfghje"), 0, 4);
-        chatList.add(new TextArea("name"), 0, 5);
-        chatList.add(new TextArea("namlkjhgfdg,j.ke"), 0, 6);
-        chatList.add(new TextArea("name"), 0, 7);
-        chatList.add(new TextArea("name"), 0, 8);
-        chatList.add(new TextArea("name"), 0, 9);
-        chatList.add(new TextArea("name"), 0, 10);
-        chatList.add(new TextArea("name"), 0, 11);
-        chatList.add(new TextArea("name"), 0, 12);
-        chatList.add(new TextArea("name"), 0, 13);
-        chatList.add(new TextArea("name"), 0, 14);
-        chatList.add(new TextArea("name"), 0, 15);
-        chatList.add(new TextArea("name"), 0, 16);
-        chatList.add(new TextArea("name"), 0, 17);
-        chatList.add(new TextArea("name"), 0, 18);
-        chatList.add(new TextArea("name"), 0, 19);
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("fkljhgafdchANHJDD"));
+        ChatRoom.getChildren().add(new TextArea(",.sdmfbhsdn,fksdf"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("DSSDGSGSG"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdnsdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
+        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
     }
 
     @FXML
