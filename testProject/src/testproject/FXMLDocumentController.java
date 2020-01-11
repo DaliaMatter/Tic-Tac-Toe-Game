@@ -5,6 +5,8 @@
  */
 package testproject;
 
+import ChatRoomClients.ChatRoomClients;
+import Server.Server;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -28,9 +30,10 @@ import javafx.scene.control.Label;
  */
 public class FXMLDocumentController implements Initializable {
 
-    private ServerSocket localServer;
-    private Socket client;
+    static public Boolean startS;
     private Boolean serverStart;
+    private Thread tt;
+    private Server ss;
     @FXML
     private Button stop, start;
 
@@ -38,22 +41,50 @@ public class FXMLDocumentController implements Initializable {
     private Label label;
 
     @FXML
-    private void buttonEnd() {
-        serverStart = false;
+    private void buttonEnd(ActionEvent actionevent) {
+        startS = false;
+
+        System.out.println("stop closeAction");
     }
 
     @FXML
     private void closeAction(ActionEvent actionevent) {
+        System.out.println("stop closeAction");
 
     }
 
     @FXML
     private void buttonStart(ActionEvent actionevent) {
-        
+        startS = true;
+        tt = new Thread(new Runnable() {
+            public void stop() {
+                System.out.println("Runnable is stopping");
+                try {
+                    ss.shutDown();
+                    System.exit(0);
+                } catch (Exception e) {
+                    System.exit(-1);
+                }
+            }
+
+            @Override
+            public void run() {
+                while (startS) {
+                    ss = new Server();
+                    if (!startS) {
+                        System.out.println("break");
+                        break;
+                    }
+                }
+
+            }
+        });
+                        System.out.println("after loop");
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+
 }
