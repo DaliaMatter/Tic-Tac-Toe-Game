@@ -21,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -32,6 +33,8 @@ public class FXMLDocumentControllerChoice implements Initializable {
 
     @FXML
     public Label label;
+    @FXML
+    public AnchorPane anchorPane;
     @FXML
     public Button btn1, btn2, btn3;
     @FXML
@@ -145,6 +148,12 @@ public class FXMLDocumentControllerChoice implements Initializable {
     @FXML
     private void closeAction(ActionEvent actionevent) {
         System.exit(0);
+    }
+    @FXML 
+    private void minimizeAction(ActionEvent actionevent)
+    {
+        Stage stage=(Stage)anchorPane.getScene().getWindow();
+        stage.setIconified(true);
     }
 
 }

@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="600.0" minHeight="700.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../css/choice.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller= "testprojectgui.FXMLDocumentControllerChoice">
+<AnchorPane fx:id="anchorPane" maxHeight="700.0" maxWidth="600.0" minHeight="700.0" minWidth="600.0" prefHeight="700.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../css/choice.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller= "testprojectgui.FXMLDocumentControllerChoice">
     <children>
         <Text fill="#79dddf" layoutX="144.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play with ?">
             <font>
@@ -22,12 +22,7 @@
             <Font name="Arial Bold" size="20.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="455.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  |" textAlignment="CENTER" textFill="#3366cc">
-         <font>
-            <Font name="Arial Bold" size="20.0" />
-         </font>
-      </Hyperlink>
-      <Hyperlink layoutX="409.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#closeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  -" textAlignment="CENTER" textFill="#3366cc">
+      <Hyperlink layoutX="455.0" maxHeight="30.0" maxWidth="40.0" minHeight="30.0" minWidth="40.0" onAction="#minimizeAction" prefHeight="30.0" prefWidth="40.0" styleClass="icon" text="  -" textAlignment="CENTER" textFill="#3366cc">
          <font>
             <Font name="Arial Bold" size="20.0" />
          </font>

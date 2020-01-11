@@ -20,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
@@ -45,6 +46,8 @@ public class FXMLDocumentController implements Initializable {
     private boolean AITurn;
     private String choseenLevel;
 
+    @FXML
+    public AnchorPane anchorPane;
     @FXML
     public Label label;
     @FXML
@@ -83,7 +86,6 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(1);
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
     }
 
@@ -98,7 +100,6 @@ public class FXMLDocumentController implements Initializable {
 
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
 
     }
@@ -114,7 +115,6 @@ public class FXMLDocumentController implements Initializable {
 
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
 
     }
@@ -130,7 +130,6 @@ public class FXMLDocumentController implements Initializable {
 
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
 
         }
 
@@ -146,7 +145,6 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(5);
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
 
     }
@@ -161,7 +159,6 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(6);
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
 
     }
@@ -176,7 +173,6 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(7);
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
 
     }
@@ -192,7 +188,6 @@ public class FXMLDocumentController implements Initializable {
         selectPosition(8);
         if (AIFlag == true && win != true) {
             pcPositions();
-            checkWin();
         }
 
     }
@@ -214,7 +209,9 @@ public class FXMLDocumentController implements Initializable {
                 turn = 'X';
             }
             AITurn = true;
-        } else {
+        }
+        
+        else {
             AITurn = false;
         }
 
@@ -297,6 +294,7 @@ public class FXMLDocumentController implements Initializable {
                 }
                 break;
         }
+        checkWin();
         if (turn == 'X') {
             turn = 'O';
         } else {
@@ -351,9 +349,15 @@ public class FXMLDocumentController implements Initializable {
         chatList.add(new TextArea("name"), 0, 19);
     }
 
-    @FXML
+     @FXML
     private void closeAction(ActionEvent actionevent) {
         System.exit(0);
+    }
+    @FXML 
+    private void minimizeAction(ActionEvent actionevent)
+    {
+        Stage stage=(Stage)anchorPane.getScene().getWindow();
+        stage.setIconified(true);
     }
 
 }
