@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/FXMLDocumentAlter.fxml</file>
-            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/alert.java</file>
-            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/FXMLDocumentControllerChoice.java</file>
-            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/TestProjectGUI.java</file>
-            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/FXMLDocumentChoice.fxml</file>
+            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/FXMLDocumentController.java</file>
             <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/testprojectgui/FXMLDocument.fxml</file>
+            <file>file:/F:/ITI/Java%20Programming/rep/Tic-Tac-Toe-Game/testProjectGUI/src/css/board.css</file>
         </group>
     </open-files>
 </project-private>

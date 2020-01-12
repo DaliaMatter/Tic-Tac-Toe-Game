@@ -7,6 +7,7 @@ package testprojectgui;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
@@ -56,6 +57,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     public VBox ChatRoom;
 
+    public Vector<TextArea> theChat;
     public Stage myStage;
     public Scene myScene;
 
@@ -210,9 +212,7 @@ public class FXMLDocumentController implements Initializable {
                 turn = 'X';
             }
             AITurn = true;
-        }
-        
-        else {
+        } else {
             AITurn = false;
         }
 
@@ -326,37 +326,39 @@ public class FXMLDocumentController implements Initializable {
         turn = 'X';
         AIFlag = false;
         AITurn = false;
+        theChat = new Vector<>();
+        theChat = new Vector<>();
+        TextArea a = new TextArea("ldgfhdsnfcvxcvcxvcxvcxvcvxcvhjsdfmdsfsdfsdfsdf");
+        a.setEditable(false);
+        theChat.add(a);
+        TextArea a1 = new TextArea("cvcxvcvvvxvcxvcvxcvxcvcxvxcvxcvxvx");
+        a1.setEditable(false);
+        //a1.setStyle("-fx-background-color:yellow;");
+        theChat.add(a1);
+        TextArea a2 = new TextArea("cvcxvcvvvxvcxvcvxcvxcvcxvxcvxcvxvx");
+        a2.setEditable(false);
+        theChat.add(a2);
+        TextArea a3 = new TextArea("cvcxvcvvvxvcxvcvxcvxcvcxvxcvxcvxvx");
+        a3.setEditable(false);
+        theChat.add(a3);
+        TextArea a4 = new TextArea("cvcxvcvvvxvcxvcvxcvxcvcxvxcvxcvxvx");
+        a4.setEditable(false);
+        theChat.add(a4);
+        System.out.println(theChat.size());
+        for (int i = 0; i < theChat.size(); i++) {
+            ChatRoom.getChildren().add(theChat.elementAt(i));
+        }
 
-        Label ll = new Label("name");
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("fkljhgafdchANHJDD"));
-        ChatRoom.getChildren().add(new TextArea(",.sdmfbhsdn,fksdf"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("DSSDGSGSG"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdnsdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
-        ChatRoom.getChildren().add(new TextArea("sdmfbhsdnsdmfbhsdn"));
     }
 
     @FXML
     public void closeAction(ActionEvent actionevent) {
         System.exit(0);
     }
-    @FXML 
-    public void minimizeAction(ActionEvent actionevent)
-    {
-        Stage stage=(Stage)anchorPane.getScene().getWindow();
+
+    @FXML
+    public void minimizeAction(ActionEvent actionevent) {
+        Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setIconified(true);
     }
 
