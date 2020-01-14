@@ -67,13 +67,12 @@ public class FXMLDocumentControllerChoice implements Initializable {
         System.out.println("jj");
 
     }
- 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        String st = "-fx-fill:white;-fx-font-size:20px;-fx-font-family: Arial;-fx-text-align: center;";
-        arrText = new Vector<Text>();
+        String st = " -fx-fill:white; -fx-font-size:16px; -fx-font-family:Arial; -fx-text-align:center;";
+       /* arrText = new Vector<Text>();
 
         Text label2 = new Text("Label");
         label2.setStyle(st);
@@ -99,8 +98,22 @@ public class FXMLDocumentControllerChoice implements Initializable {
 
         Label label13 = new Label("Label");
         Label label14 = new Label("Label");
-
-        myGrade.add(label3, 1, 3);
+*/
+        for (int i = 1; i < 10; i++) {
+            Text label = new Text("Label");
+            label.setStyle(st);
+            myGrade.add(label, 0, i);
+            Text labe = new Text("Label");
+            labe.setStyle(st);
+            myGrade.add(labe, 1, i);
+            Button lab = new Button("Label");
+            //lab.setStyle(st);
+            lab.setId(i+"");
+            lab.setOnAction(e->{System.out.println(lab.getId());});
+            myGrade.add(lab, 2, i);
+        }
+        
+  /*      myGrade.add(label3, 1, 3);
         myGrade.add(label4, 1, 4);
         myGrade.add(label5, 1, 5);
         myGrade.add(label6, 1, 6);
@@ -112,7 +125,7 @@ public class FXMLDocumentControllerChoice implements Initializable {
         myGrade.add(label12, 1, 12);
         myGrade.add(label13, 1, 13);
         myGrade.add(label14, 1, 14);
-        System.out.println(myGrade.getChildren().get(0));
+        System.out.println(myGrade.getChildren().get(0));*/
     }
 
     @FXML
