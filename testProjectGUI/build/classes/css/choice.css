@@ -1,42 +1,37 @@
-
-.mainFxmlClass {
-    -fx-background-image: url('../image/yy.jpg');
-}
-.icon
+.scrollPane
 {
-  -fx-background-color:#ffffff;   
-}
-
-.pic
-{
-        -fx-background-size: 100% ;
-
+    -fx-border-color:#E594AA;
+    -fx-background-color:transparent;   
 }
 .playersList
 {
-    -fx-border-color:white;
+    -fx-border-color:#E594AA;
     -fx-background-color:#E594AA;
-
+    -fx-text-align: center;
 }
-.playersList Text
+.playersList > *
 {
-    
     -fx-fill: white;
-
+    -fx-font-size:20px;
+    -fx-font-family: Arial;
+    -fx-text-align: center;
 }
 .playersList Line {
-  -fx-stroke   : white;
+    -fx-stroke: white;
 }
-.buttonplay
+.buttonPlayEassy
+{
+    -fx-background-image: url('../image/level1.png');
+    -fx-background-color:transparent;
+        -fx-background-size: 100% ;
+
+}
+
+.buttonPlayHard
 {
     //-fx-background-color:linear-gradient(#DE788E,#90C3B8);
-    -fx-background-color:#3265CC;
-    -fx-border-color: #3265CC;
-    -fx-border-width: 2px;
-    -fx-border-radius: 12px;
-    -fx-background-radius:30px;
-}
-.close
-{
-    -fx-background-color:#545132;
+    -fx-background-image: url('../image/level2.png');
+    -fx-background-color:transparent;
+        -fx-background-size: 100% ;
+
 }

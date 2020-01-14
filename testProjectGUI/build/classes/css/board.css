@@ -1,12 +1,3 @@
-
-.main {     
-    -fx-background-image: url('../image/yy.jpg');
-}
-.icon
-{
-  -fx-background-color:#ffffff;   
-}
-
 .buttonGridO
 {
     -fx-background-color: transparent;
@@ -22,11 +13,20 @@
 {
     //-fx-background-color:linear-gradient(#DE788E,#90C3B8);
     -fx-background-color:transparent;
-    -fx-background-image: url('../image/Button-Pause-icon.png');
-        -fx-background-size: 100% ;
-
+    -fx-background-image: url('../image/pause22.png');
+    -fx-background-size: 100% ;
 }
-.close
+.buttonChat
 {
-  -fx-background-color:#545132;
+    //-fx-background-color:linear-gradient(#DE788E,#90C3B8);
+    -fx-background-color:transparent;
+    -fx-background-image: url('../image/chat2.png');
+    -fx-background-size: 100% ;
+}
+
+.buttonSend
+{
+    -fx-background-color:transparent;
+    -fx-background-image: url('../image/send.png');
+    -fx-background-size: 100% ;
 }

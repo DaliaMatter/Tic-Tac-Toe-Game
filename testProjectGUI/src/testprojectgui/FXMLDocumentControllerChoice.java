@@ -8,6 +8,7 @@ package testprojectgui;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Vector;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -23,6 +24,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
@@ -31,6 +33,7 @@ import javafx.stage.Stage;
  */
 public class FXMLDocumentControllerChoice implements Initializable {
 
+    Vector<Text> arrText;
     @FXML
     public Label label;
     @FXML
@@ -64,27 +67,39 @@ public class FXMLDocumentControllerChoice implements Initializable {
         System.out.println("jj");
 
     }
+ 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        Label Label111 = new Label("Text Field");
-        //col,row
-        myGrade.add(Label111, 1, 1);
-        Label label2 = new Label("Label");
-        Label label3 = new Label("Label");
-        Label label4 = new Label("Label");
-        Label label5 = new Label("Label");
-        Label label6 = new Label("Label");
-        Label label7 = new Label("Label");
-        Label label8 = new Label("Label");
-        Label label9 = new Label("Label");
-        Label label10 = new Label("Label");
-        Label label11 = new Label("Label");
-        Label label12 = new Label("Label");
+        String st = "-fx-fill:white;-fx-font-size:20px;-fx-font-family: Arial;-fx-text-align: center;";
+        arrText = new Vector<Text>();
+
+        Text label2 = new Text("Label");
+        label2.setStyle(st);
+        Text label3 = new Text("Label");
+        label3.setStyle(st);
+        Text label4 = new Text("Label");
+        label4.setStyle(st);
+
+        Text label5 = new Text("Label");
+        label5.setStyle(st);
+        Text label6 = new Text("Label");
+        label6.setStyle(st);
+        Text label7 = new Text("Label");
+        label7.setStyle(st);
+
+        Text label8 = new Text("Label");
+        label8.setStyle(st);
+        Text label9 = new Text("Label");
+        label9.setStyle(st);
+        Text label10 = new Text("Label");
+        Text label11 = new Text("Label");
+        Text label12 = new Text("Label");
+
         Label label13 = new Label("Label");
         Label label14 = new Label("Label");
-        myGrade.add(label2, 1, 2);
+
         myGrade.add(label3, 1, 3);
         myGrade.add(label4, 1, 4);
         myGrade.add(label5, 1, 5);
@@ -97,7 +112,6 @@ public class FXMLDocumentControllerChoice implements Initializable {
         myGrade.add(label12, 1, 12);
         myGrade.add(label13, 1, 13);
         myGrade.add(label14, 1, 14);
-
         System.out.println(myGrade.getChildren().get(0));
     }
 
@@ -149,10 +163,10 @@ public class FXMLDocumentControllerChoice implements Initializable {
     public void closeAction(ActionEvent actionevent) {
         System.exit(0);
     }
-    @FXML 
-    public void minimizeAction(ActionEvent actionevent)
-    {
-        Stage stage=(Stage)anchorPane.getScene().getWindow();
+
+    @FXML
+    public void minimizeAction(ActionEvent actionevent) {
+        Stage stage = (Stage) anchorPane.getScene().getWindow();
         stage.setIconified(true);
     }
 

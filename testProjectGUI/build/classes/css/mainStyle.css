@@ -1,0 +1,15 @@
+.main {     
+    -fx-background-image: url('../image/yy.jpg');
+}
+.close
+{
+    -fx-background-color:transparent;
+    -fx-background-image: url('../image/close-window.png');
+    -fx-background-size: 100% ;
+}
+.mini
+{
+    -fx-background-color:transparent;
+    -fx-background-image: url('../image/minimize-window.png');
+    -fx-background-size: 100% ;
+}
