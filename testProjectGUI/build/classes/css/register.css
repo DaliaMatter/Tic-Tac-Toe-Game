@@ -1,5 +1,5 @@
-.mainFxmlClass {
-    -fx-background-image: url('../image/yy.jpg');
+.textColor{
+-fx-text-inner-color: gray;
 }
 .buttonLogin
 {
@@ -9,11 +9,4 @@
     -fx-border-width: 4px;
     -fx-border-radius: 12px;
     -fx-background-radius:30px;
-}
-.icon
-{
-  -fx-background-color:#ffffff;   
-}
-.textColor{
--fx-text-inner-color: gray;
 }

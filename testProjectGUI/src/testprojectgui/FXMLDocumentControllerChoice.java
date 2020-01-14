@@ -33,11 +33,13 @@ import javafx.stage.Stage;
  */
 public class FXMLDocumentControllerChoice implements Initializable {
 
+    @FXML
+    public AnchorPane anchorPane;
+    
     Vector<Text> arrText;
     @FXML
     public Label label;
-    @FXML
-    public AnchorPane anchorPane;
+    
     @FXML
     public Button btn1, btn2, btn3;
     @FXML

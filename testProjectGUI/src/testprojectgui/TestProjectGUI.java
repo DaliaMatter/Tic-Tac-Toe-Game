@@ -26,7 +26,7 @@ public class TestProjectGUI extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLDocumentChoice.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLDocumentLogin.fxml"));
         Parent root = (Parent) fxmlLoader.load();
        root.setOnMousePressed((MouseEvent event) -> {
             xOffset = event.getSceneX();
@@ -38,7 +38,7 @@ public class TestProjectGUI extends Application {
         });
       
         Scene scene = new Scene(root);
-        ((FXMLDocumentControllerChoice) fxmlLoader.getController()).setStage(stage, scene);
+        ((FXMLDocumentControllerLogin) fxmlLoader.getController()).setStage(stage, scene);
 
 //"testprojectgui.FXMLDocumentController">     
         //FXMLDocument
